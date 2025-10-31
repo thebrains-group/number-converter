@@ -28,3 +28,10 @@ it('converts numbers to binary', function () {
     expect(NumberConverter::number(5)->toBinary())->toBe('101');
     expect(NumberConverter::number(10)->toBinary())->toBe('1010');
 });
+
+
+it('converts numbers to hexadecimal', function () {
+    expect(NumberConverter::number(10)->toHexadecimal())->toBe('A');
+    expect(NumberConverter::number(255)->toHexadecimal())->toBe('FF');
+    expect(NumberConverter::number(4095)->toHexadecimal())->toBe('FFF');
+});
