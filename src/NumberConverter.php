@@ -53,4 +53,9 @@ class NumberConverter
 
         return $formatter->format($this->number);
     }
+
+    public function toBinary(): string
+    {
+        return decbin($this->number);
+    }
 }

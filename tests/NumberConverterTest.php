@@ -19,3 +19,12 @@ it('converts numbers to words', function () {
     expect(NumberConverter::number(100)->toWords())->toBe('cent');
     expect(NumberConverter::number(1234)->toWords())->toBe('mille deux cent trente-quatre');
 });
+
+
+it('converts numbers to binary', function () {
+    expect(NumberConverter::number(0)->toBinary())->toBe('0');
+    expect(NumberConverter::number(1)->toBinary())->toBe('1');
+    expect(NumberConverter::number(2)->toBinary())->toBe('10');
+    expect(NumberConverter::number(5)->toBinary())->toBe('101');
+    expect(NumberConverter::number(10)->toBinary())->toBe('1010');
+});
