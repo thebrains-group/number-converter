@@ -2,4 +2,6 @@
 
 namespace TheBrains\NumberConverter;
 
-class NumberConverter {}
+class NumberConverter
+{
+}
