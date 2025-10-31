@@ -16,9 +16,6 @@ class NumberConverter
 
     public function toRoman(): string
     {
-        $array = [1,2,3];
-        $wiltek = null;
-
         $map = [
             'M' => 1000,
             'CM' => 900,
