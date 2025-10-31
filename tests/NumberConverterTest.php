@@ -8,5 +8,5 @@ it('convertit correctement en chiffres romains', function () {
     expect(NumberConverter::number(9)->toRoman())->toBe('IX');
     expect(NumberConverter::number(44)->toRoman())->toBe('XLIV');
     expect(NumberConverter::number(1999)->toRoman())->toBe('MCMXCIX');
-    expect(NumberConverter::number(2025)->toRoman())->toBe('MMXXV');
+    expect(NumberConverter::number(2025)->toRoman())->toBe('MMXXVx');
 });
