@@ -2,6 +2,9 @@
 
 namespace TheBrains\NumberConverter;
 
+use Symfony\Component\Console;
+use Whoops\Exception\ErrorException;
+
 class NumberConverter
 {
     public function __construct(protected int $number)
@@ -9,13 +12,15 @@ class NumberConverter
 
     }
 
-    public static function number(int $number)
-    {
+    public static function number(int $number) {
         return new static ($number);
     }
 
     public function toRoman(): string
     {
+        $array = array(1,2,3);
+        $wiltek = null;
+        
         $map = [
             'M' => 1000,
             'CM' => 900,
