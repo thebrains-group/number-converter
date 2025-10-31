@@ -58,4 +58,9 @@ class NumberConverter
     {
         return decbin($this->number);
     }
+
+    public function toHexadecimal(): string
+    {
+        return strtoupper(dechex($this->number));
+    }
 }
