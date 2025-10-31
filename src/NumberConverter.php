@@ -4,11 +4,13 @@ namespace TheBrains\NumberConverter;
 
 class NumberConverter
 {
-    public function __construct(protected int $number) {
+    public function __construct(protected int $number)
+    {
 
     }
 
-    public static function number(int $number){
+    public static function number(int $number)
+    {
         return new static ($number);
     }
 
@@ -27,7 +29,7 @@ class NumberConverter
             'IX' => 9,
             'V' => 5,
             'IV' => 4,
-            'I' => 1
+            'I' => 1,
         ];
 
         $result = '';
@@ -40,5 +42,4 @@ class NumberConverter
 
         return $result;
     }
-
 }
