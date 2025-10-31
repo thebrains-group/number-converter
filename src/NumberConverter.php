@@ -45,9 +45,12 @@ class NumberConverter
 
     public function toWords(): string
     {
-        if ($this->number === 0) return 'zéro';
+        if ($this->number === 0) {
+            return 'zéro';
+        }
 
         $formatter = new \NumberFormatter('fr_FR', \NumberFormatter::SPELLOUT);
+
         return $formatter->format($this->number);
     }
 }
