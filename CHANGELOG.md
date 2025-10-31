@@ -2,6 +2,10 @@
 
 All notable changes to `number-converter` will be documented in this file.
 
+## gh added to my computer - 2025-10-31
+
+**Full Changelog**: https://github.com/thebrains-group/number-converter/compare/v1.1.2...1.3.1
+
 ## 1.2.0 - 2025-10-31
 
 -- add number to hexadecimal converter
